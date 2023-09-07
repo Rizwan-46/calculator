@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap');
+
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   background-color: #EE4E34;
+}
+.container{
+    max-width: 90%;
+    margin: 50px auto 0 auto;
+    /* border: 1px solid black; */
+}
+.container h1{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+}
+.result{
+    max-width: 600px;
+    margin: auto;
+    /* border: 1px solid black */
+}
+.result .both-name{
+    display: flex;
+    justify-content: center;
+}
+.first-person{
+   margin-right: 20px;
+   text-align: center;
+}
+.both-name{
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: 'karla', sans-serif;
+}
+.final-result{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'poppins', sans-serif;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.final-result img{
+    width: 50px;
+    height: 50px;
+}
+.input-field{
+    max-width: 700px;
+    margin: 40px auto 0 auto;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.one{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.one label{
+    margin-top: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'karla';
+    font-size: 22px;
+}
+.one input{
+    outline: none;
+    width: 300px;
+    height: 40px;
+    background-color:  #EA738D;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+.container .calculate{
+    position: relative;
+    left: 50%;
+    transform:  translateX(-50%);
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'karla', sans-serif;
+    border-radius: 0;
+    outline: none;
+    border: none;
+    background-color:  #EA738D;
+
+}
+.calculate:hover{
+    filter: brightness(120%);
+}
+
+@media only screen and (max-width: 600px){
+    .result{
+        width: 100%;
+    }
+    .first-person{
+text-align: center;
+    }
+    .second-person{
+        text-align: center;
+    }
+    .input-field{
+       width: 100%;
+        margin: 40px auto 0 auto;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
